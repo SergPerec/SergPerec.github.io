@@ -7,6 +7,10 @@ body {
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 a {
@@ -14,4 +18,5 @@ a {
     text-decoration: none;
     font-size: 26px;
     font-weight: 500;
+    color: greenyellow;
 }
