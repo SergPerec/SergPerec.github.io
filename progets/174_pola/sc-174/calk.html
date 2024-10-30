@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="./assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+
+    <title>Калькулятор</title>
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container desktop">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <a class="active" href="catalog.html">Каталог</a>
+                    <a href="action.html">Акции</a>
+                    <a href="company.html">О компании</a>
+                    <a href="contact.html">Контакты</a>
+                    <a href="#">Избранное</a>
+                </nav>
+                <div class="wrapper_element_header">
+
+                    <div class="header__search">
+                        <input type="text" value="" placeholder="поиск по сайту">
+                        <img src="./assets/img/Search.png" alt="">
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+7 (932) 0-174-000">+7 (932) 0-174-000</a>
+                    </div>
+                    <div class="header__cart" id="header__cart">
+                        <img src="./assets/img/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header__cart__inner" id="header__cart__inner">
+                <div class="cart__top">
+                    <h3 class="cart__top__title">корзина</h3>
+                    <button class="cart__top__close" id="cart__top__close">
+                        <img src="assets/img/cart_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="cart__inner">
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/1.png" alt="image">
+                            </div>
+                            <div class="cart__item__content">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro мрамор серый
+                                    v4220-40296 </p>
+                                <p class="cart__item__price">3 895 ₽/м²</p>
+                            </div>
+
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/2.png" alt="image">
+                                <span>-15%</span>
+                            </div>
+                            <div class="cart__item__content ">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro известняк бежевый
+                                    v4220-40300
+                                </p>
+                                <p class="cart__item__price">3 895 ₽/м²<span>1 639 ₽/м²</span></p>
+                            </div>
+
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/3.png" alt="image">
+                            </div>
+                            <div class="cart__item__content">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro мрамор серый
+                                    v4220-40296 </p>
+                                <p class="cart__item__price">3 895 ₽/м²</p>
+                            </div>
+
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__inner__price">
+                        <p>Итого</p>
+                        <p>14 358 ₽ </p>
+                    </div>
+                    <div class="cart__inner__btnbox">
+                        <button class="cart__inner__btn">Продолжить покупки</button>
+                        <a class="cart__inner__btn active" href="order.html">
+                            оформить заказ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mobile">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="burger-container">
+                <span class="burger"></span>
+            </div>
+            <div class="burger_innner">
+                <div class="header__search mobile">
+                    <input type="text" value="" placeholder="поиск по сайту">
+                    <img src="./assets/img/Search.png" alt="">
+                </div>
+                <div class="header__menu mobile">
+                    <ul>
+                        <li class="active"><a href="catalog.html">Каталог</a></li>
+                        <li><a href="action.html">Акции</a></li>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="#">избранное</a></li>
+                        <li id="header__cart__mobile">
+                            <div>корзина</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__phone mobile">
+                    <a href="tel:+7 (932) 0-174-000">+7 (932) 0-174-000</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="cart__overlay"></div>
+
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> |
+            <a href="calk.html">Калькулятор расчета ламината</a> :
+        </div>
+    </div>
+
+    <main>
+        <div class="container desktop">
+            <div class="calculator">
+                <h1 class="calculator__title">Калькулятор расчета ламината</h1>
+                <div class="calculator__inner">
+                    <div class="calculator__item materials__left">
+                        <div class="calculator__item__form">
+                            <div class="calculator__item__measurement">
+                                <h2 class="calculator__item__title">ИЗМЕРЕНИЕ</h2>
+                                <div class="calculator__item__radio-group">
+                                    <label>
+                                        <input type="radio" name="measurement" checked>
+                                        <span></span> M
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="measurement">
+                                        <span></span> СМ
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="measurement">
+                                        <span></span> ММ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="calculator__item__floor">
+                                <h2 class="calculator__item__title">размеры пола</h2>
+                                <div class="calculator__item__floor__box">
+                                    <div>
+                                        <label>длина, м</label>
+                                        <input type="number" id="floorLength" value="5" step="0.1" placeholder="введите длину">
+                                    </div>
+                                    <div>
+                                        <label>ширина, м</label>
+                                        <input type="number" id="floorWidth" value="3" step="0.1" placeholder="введите ширину">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item__laminat">
+                                <h2 class="calculator__item__title">размеры ламината</h2>
+                                <div class="calculator__item__floor__box laminat">
+                                    <div>
+                                        <label>длина, м</label>
+                                        <input type="number" id="laminateLength" value="1.2" step="0.1 placeholder="введите длину">
+                                    </div>
+                                    <div>
+                                        <label>ширина, м</label>
+                                        <input type="number" id="laminateWidth" value="0.2" step="0.1 placeholder="введите ширину">
+                                    </div>
+                                    <div>
+                                        <label>толщина, м</label>
+                                        <input type="number" placeholder="введите толщину">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item__pack">
+                                <h2 class="calculator__item__title">упаковка ламината</h2>
+                                <div class="calculator__item__floor__box">
+                                    <div>
+                                        <label>количество, шт</label>
+                                        <input type="number" placeholder="введите кол-во">
+                                    </div>
+                                    <div>
+                                        <label>вес, кг</label>
+                                        <input type="number" placeholder="введите вес">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item__direction">
+                                <h2 class="calculator__item__title">направление укладки ламината</h2>
+                                <div class="calculator__item__radio-group">
+                                    <label>
+                                        <input type="radio" name="direction" checked>
+                                        <span></span> 90°
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="direction">
+                                        <span></span> 45°
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="direction">
+                                        <span></span> 0°
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="direction">
+                                        <span></span> -45°
+                                    </label>
+                                </div>
+                                <div class="calculator__item__direction__imgbox">
+                                    <img src="assets/img/calk/direction.png" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="calculator__item__correction">
+                                <div class="calculator__item__correction__floor-settings">
+                                    <div class="input__group__top">
+                                      <div>
+                                        <label for="gap">ОТСТУП ОТ СТЕН, ММ</label>
+                                        <select id="gap">
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                          </select>
+                                      </div>
+                                      <div>
+                                        <label for="offset">СМЕЩЕНИЕ РЯДОВ</label>
+                                        <select id="offset">
+                                          <option value="1/2 доски">1/2 ДОСКИ</option>
+                                          <option value="1/3 доски">1/3 ДОСКИ</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="input__group__bottom">
+                                      <div>
+                                        <label for="cut">ПОДРЕЗКА ПО ШИРИНЕ</label>
+                                        <select id="cut">
+                                          <option value="симметричная">СИММЕТРИЧНАЯ</option>
+                                          <option value="сторона">с одной стороны</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="calculator__item__materials">
+                                <h2 class="calculator__item__title">цена за Материалы</h2>
+                                <div class="calculator__item__materials__box">
+                                    <p class="calculator__item__materials__product">Ламинат 1292х194х9 мм</p>
+                                   <div class="calculator__item__materials__inner">
+                                       <div class="calculator__item__materials__cost">
+                                           <label>стоимость</label>
+                                           <input type="number" placeholder="1000">
+                                       </div>
+                                       <div class="calculator__item__materials__meaning">
+                                           <label for="meaning">значение</label>
+                                           <select id="meaning">
+                                               <option value="₽/м2">₽/м2</option>
+                                               <option value="₽/м2">₽/уп</option>
+                                               <option value="₽/м2">₽/шт</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item__price">
+                                <h2 class="calculator__item__title">цены за услуги</h2>
+                                <div class="calculator__item__price__box">
+                                    <div class="calculator__item__price__item">
+                                        <label>Доставка, ₽</label>
+                                        <input type="number" placeholder="стоимость доставки">
+                                    </div>
+                                    <div class="calculator__item__price__item">
+                                        <label>Монтаж, ₽/м2</label>
+                                        <input type="number" placeholder="500">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__item__btnbox">
+                                
+                                <button class="calculator__item__btn">
+                                    очистить поля
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__item result__right">
+                        <div class="calculator__item__result">
+                            <canvas id="myCanvas"></canvas>
+                            <!-- <img src="assets/img/calk/calk_img.png" alt=""> -->
+                        </div>
+                        <button onclick="updateLayout()" class="calculator__item__btn active">
+                            Расчитать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="pre-footer">
+        <div class="container">
+            <div class="pre-footer-top">
+                <h2>Контактная информация</h2>
+                <button class="btn_green pre-footer-btn">Построить маршрут</button>
+            </div>
+            <div class="pre-footer-bottom">
+                <p class="address">
+                    г. Челябинск<br />
+                    свердловский проспект, 39
+                </p>
+                <div class="hours">
+                    <div class="hours-left">
+                        <p>ПН — ПТ</p>
+                        <p>СБ — вс</p>
+                    </div>
+                    <div class="hours-right">
+                        <p>10:00 — 19:00</p>
+                        <p>11:00 — 17:00</p>
+                    </div>
+                </div>
+                <div class="pre-footer-contacts">
+                    <a href="tel:+7 (932) 017-40-00">+7 (932) 017-40-00</a>
+                    <a href="mailto:info@174pola.ru">info@174pola.ru</a>
+                </div>
+                <div class="socials">
+                    <a href="" class="socials-wa"></a>
+                    <a href="" class="socials-tg"></a>
+                    <a href="" class="socials-vk"></a>
+                </div>
+                <button class="btn_green pre-footer-btn-mobile">Построить маршрут</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-cols">
+                <div class="footer-cols-wrapper">
+                    <div class="footer-col">
+                        <h2>Продукция</h2>
+                        <div class="footer-col-menu">
+                            <a href="category.html">Ламинат</a>
+                            <a href="">Паркет</a>
+                            <a href="">Кварц-винил</a>
+                            <a href="">3D панели</a>
+                            <a href="">линолиум</a>
+                            <a href="">Аксессуары</a>
+                            <a href="">Паркетная доска</a>
+                            <a href="">Химия</a>
+                            <a href="">Теплый пол</a>
+                            <a href="">Плинтусы, карнизы</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Услуги</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Замер</a>
+                            <a href="">Дизайн</a>
+                            <a href="">Монтаж</a>
+                            <a href="">Доставка</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Вдохновение</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Галерея проектов</a>
+                            <a href="">Альбом технических<br />решений</a>
+                            <a href="">Идеи дизайна</a>
+                            <a href="">готовые решения</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cols-wrapper">
+                    <div class="footer-col">
+                        <h2>Поддержка</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Как выбрать ламинат</a>
+                            <a href="">Самостоятельный<br />монтаж</a>
+                            <a href="">РОS материалы</a>
+                            <a href="">Вопросы и ответы</a>
+                            <a href="">Как отличить<br />подделку</a>
+                            <a href="">Способы оплаты</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>специалистам</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Дилерам</a>
+                            <a href="">Дизайнерам</a>
+                            <a href="">Застройщикам</a>
+                            <a href="">Вакансии</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>о нас</h2>
+                        <div class="footer-col-menu">
+                            <a href="">О компании</a>
+                            <a href="">Новости</a>
+                            <a href="">Реквизиты</a>
+                            <a href="">Статьи</a>
+                            <a href="">ОТзывы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_calc"><img src="./assets/img/calc.png" alt=""></button>
+            <div class="site-info">
+                <p class="copyright">© 2024 174 пола. г. Челябинск</p>
+                <p class="inn">ИНН: 027003960702 | ОГРНИП: 322745600041888</p>
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

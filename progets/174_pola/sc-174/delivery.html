@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="./assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+
+    <title>Доставка и оплата</title>
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container desktop">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <a class="active" href="catalog.html">Каталог</a>
+                    <a href="action.html">Акции</a>
+                    <a href="company.html">О компании</a>
+                    <a href="contact.html">Контакты</a>
+                    <a href="#">Избранное</a>
+                </nav>
+                <div class="wrapper_element_header">
+                  
+                    <div class="header__search">
+                        <input type="text" value="" placeholder="поиск по сайту">
+                        <img src="./assets/img/Search.png" alt="">
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+7 (932) 0-174-000">+7 (932) 0-174-000</a>
+                    </div>
+                    <div class="header__cart" id="header__cart">
+                        <img src="./assets/img/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header__cart__inner" id="header__cart__inner">
+                <div class="cart__top">
+                    <h3 class="cart__top__title">корзина</h3>
+                    <button class="cart__top__close" id="cart__top__close">
+                        <img src="assets/img/cart_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="cart__inner">
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/1.png" alt="image">
+                            </div>
+                            <div class="cart__item__content">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro мрамор серый
+                                    v4220-40296 </p>
+                                <p class="cart__item__price">3 895 ₽/м²</p>
+                            </div>
+    
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+    
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/2.png" alt="image">
+                                <span>-15%</span>
+                            </div>
+                            <div class="cart__item__content ">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro известняк бежевый
+                                    v4220-40300
+                                </p>
+                                <p class="cart__item__price">3 895 ₽/м²<span>1 639 ₽/м²</span></p>
+                            </div>
+    
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+    
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <div class="cart__item__box">
+                            <div class="cart__img">
+                                <img src="assets/img/cart/3.png" alt="image">
+                            </div>
+                            <div class="cart__item__content">
+                                <p class="cart__item__art">артикул: 1425368</p>
+                                <p class="cart__item__text">Виниловый ламинат pergo viskan pro мрамор серый
+                                    v4220-40296 </p>
+                                <p class="cart__item__price">3 895 ₽/м²</p>
+                            </div>
+    
+                        </div>
+                        <div class="cart__item__calk count">
+                            <div class="cart__item__calk__box">
+    
+                                <button class="cart__item__calk__btn__minus ">
+                                    <img src="assets/img/cart/Buttons_—.svg" alt="">
+                                </button>
+                                <input class="cart__item__calk__num" type="text" name="count" value="1">
+                                <button class="cart__item__calk__btn__plus">
+                                    <img src="assets/img/cart/Buttons_+.png" alt="">
+                                </button>
+                            </div>
+                            <div class="cart__item__cart">
+                                <img src="assets/img/cart/cart_red.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__inner__price">
+                        <p>Итого</p>
+                        <p>14 358 ₽ </p>
+                    </div>
+                    <div class="cart__inner__btnbox">
+                        <button class="cart__inner__btn">Продолжить покупки</button>
+                        <a class="cart__inner__btn active" href="order.html">
+                            оформить заказ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mobile">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="burger-container">
+                <span class="burger"></span>
+            </div>
+            <div class="burger_innner">
+                <div class="header__search mobile">
+                    <input type="text" value="" placeholder="поиск по сайту">
+                    <img src="./assets/img/Search.png" alt="">
+                </div>
+                <div class="header__menu mobile">
+                    <ul>
+                        <li class="active"><a href="catalog.html">Каталог</a></li>
+                        <li><a href="action.html">Акции</a></li>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="#">избранное</a></li>
+                        <li id="header__cart__mobile">
+                            <div>корзина</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__phone mobile">
+                    <a href="tel:+7 (932) 0-174-000">+7 (932) 0-174-000</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="cart__overlay"></div>
+        
+    </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> |
+            <a href="company.html">о компании</a> :
+        </div>
+    </div>
+
+    <main>
+        <div class="container desktop">
+            <div class="company">
+                <div class="company__inner">
+                    <div class="company__item company__item__top">
+                        <h1 class="company__title">доставка и оплата</h1>
+                        <div class="company__tabs__container">
+                            <div class="company__pagination tabs__nav pagination">
+                                <a href="company.html" class="tab-button tabs__link">
+                                    <p>о компании</p>
+                                </a>
+                                <a href="news.html" class="tab-button tabs__link">
+                                    <p>новости</p>
+                                </a>
+                                <a href="delivery.html" class="tab-button tabs__link tabs__link_active">
+                                    <p>Доставка и оплата</p>
+                                </a>
+                                <a href="requisites.html" class="tab-button tabs__link">
+                                    <p>реквизиты</p>
+                                </a>
+                                <a href="articles.html" class="tab-button tabs__link">
+                                    <p>статьи</p>
+                                </a>
+                                <a href="reviews.html" class="tab-button tabs__link">
+                                    <p>отзывы</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company__item">
+                        <div class="tabs__content">
+                            <div class="tabs__pane tabs__pane_show company__tabs__content" id="content-1">
+                                <div class="company__tabs__content__inner">
+                                    <div class="company__text">
+                                        <h3>
+                                            174 пола - предлагает своим покупателям удобные условия доставки и оплаты.
+                                        </h3>                                      
+                                    </div>
+                                </div>
+                                <div class="company__tabs__content__inner">
+                                    <div class="information-section">
+                                        <div class="information-block">
+                                            <h2>ОПЛАТА</h2>
+                                            <ul>
+                                                <li>Для приобретения товара в нашем салоне совсем не обязательно оплачивать весь заказ сразу. Для заказа товара достаточно внести предоплату от 30% любым из способов, перечисленных ниже, а оставшуюся сумму внести при получении и проверке товара.</li>
+                                                <li>Для вашего удобства в нашем салоне напольных покрытий работают любые способы оплаты. Вы можете оплатить заказ наличными, безналичным расчетом, переводом с карты на карту, по QR-коду, по реквизитам банка. Для юридических лиц выставим счет с НДС / без НДС.</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="information-block">
+                                            <h2>ДОСТАВКА</h2>
+                                            <ul>
+                                                <li>Доставка товара осуществляется по предварительному согласованию в первой половине дня с 9.00 до 14.00 либо во второй половине дня с 14.00 до 20.00. В выходные и праздничные дни доставка товара согласовывается индивидуально и заранее.</li>
+                                                <li>Доставка по городу осуществляется БЕСПЛАТНО при заказе от 80 000 рублей, при меньшей сумме заказа стоимость единовразовой доставки по городу 1000 рублей вне зависимости от района.</li>
+                                                <li>Доставка осуществляется до подъезда, в доставку не входят разгрузка и подъем товара. Разгрузка и подъем товара рассчитывается индивидуально и согласовывается заранее.</li>
+                                                <li>Доставка негабаритного товара, керамогранита, линолеума, террасной доски рассчитывается индивидуально и согласовывается заранее.</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="information-block">
+                                            <h2>СРОКИ ПОСТАВКИ ТОВАРА</h2>
+                                            <ul>
+                                                <li>Товар поставляется в день заказа при оформлении заказа до 11.00 часов и при наличии товара на складе, при оформлении заказа до 17.00 товар поставляется на следующий рабочий день при наличии товара на складе.</li>
+                                                <li>Товар поставляется в течение 2-4 рабочих дней при наличии товара на ближайших региональных складах.</li>
+                                                <li>Товар поставляется в течение 3-14 рабочих дней при наличии товара на складе РФ.</li>
+                                                <li>Сроки поставки импортного товара из-за границы рассчитываются индивидуально и согласовываются с заказчиком.</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="information-block">
+                                            <h2>ХРАНЕНИЕ ТОВАРА</h2>
+                                            <ul>
+                                                <li>Если вы решили заказать напольное покрытие заранее, но вам некуда его положить то вы можете оставить свой заказ на хранение на нашем складе до востребования. В течение 6 месяцев хранение на складе БЕСПЛАТНО.</li>
+                                                <li>Хранение товара на складе более 6 месяцев согласовывается индивидуально.</li>
+                                                <li>На хранение можно оставить только 100% оплаченный заказ.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="pre-footer delivery__pre-footer">
+        <div class="container">
+            <div class="pre-footer-top">
+                <h2>Контактная информация</h2>
+                <button class="btn_green pre-footer-btn">Построить маршрут</button>
+            </div>
+            <div class="pre-footer-bottom">
+                <p class="address">
+                    г. Челябинск<br />
+                    свердловский проспект, 39
+                </p>
+                <div class="hours">
+                    <div class="hours-left">
+                        <p>ПН — ПТ</p>
+                        <p>СБ — вс</p>
+                    </div>
+                    <div class="hours-right">
+                        <p>10:00 — 19:00</p>
+                        <p>11:00 — 17:00</p>
+                    </div>
+                </div>
+                <div class="pre-footer-contacts">
+                    <a href="tel:+7 (932) 017-40-00">+7 (932) 017-40-00</a>
+                    <a href="mailto:info@174pola.ru">info@174pola.ru</a>
+                </div>
+                <div class="socials">
+                    <a href="" class="socials-wa"></a>
+                    <a href="" class="socials-tg"></a>
+                    <a href="" class="socials-vk"></a>
+                </div>
+                <button class="btn_green pre-footer-btn-mobile">Построить маршрут</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-cols">
+                <div class="footer-cols-wrapper">
+                    <div class="footer-col">
+                        <h2>Продукция</h2>
+                        <div class="footer-col-menu">
+                            <a href="category.html">Ламинат</a>
+                            <a href="">Паркет</a>
+                            <a href="">Кварц-винил</a>
+                            <a href="">3D панели</a>
+                            <a href="">линолиум</a>
+                            <a href="">Аксессуары</a>
+                            <a href="">Паркетная доска</a>
+                            <a href="">Химия</a>
+                            <a href="">Теплый пол</a>
+                            <a href="">Плинтусы, карнизы</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Услуги</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Замер</a>
+                            <a href="">Дизайн</a>
+                            <a href="">Монтаж</a>
+                            <a href="">Доставка</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Вдохновение</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Галерея проектов</a>
+                            <a href="">Альбом технических<br />решений</a>
+                            <a href="">Идеи дизайна</a>
+                            <a href="">готовые решения</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-cols-wrapper">
+                    <div class="footer-col">
+                        <h2>Поддержка</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Как выбрать ламинат</a>
+                            <a href="">Самостоятельный<br />монтаж</a>
+                            <a href="">РОS материалы</a>
+                            <a href="">Вопросы и ответы</a>
+                            <a href="">Как отличить<br />подделку</a>
+                            <a href="">Способы оплаты</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>специалистам</h2>
+                        <div class="footer-col-menu">
+                            <a href="">Дилерам</a>
+                            <a href="">Дизайнерам</a>
+                            <a href="">Застройщикам</a>
+                            <a href="">Вакансии</a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h2>о нас</h2>
+                        <div class="footer-col-menu">
+                            <a href="">О компании</a>
+                            <a href="">Новости</a>
+                            <a href="">Реквизиты</a>
+                            <a href="">Статьи</a>
+                            <a href="">ОТзывы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn_calc"><img src="./assets/img/calc.png" alt=""></button>
+            <div class="site-info">
+                <p class="copyright">© 2024 174 пола. г. Челябинск</p>
+                <p class="inn">ИНН: 027003960702 | ОГРНИП: 322745600041888</p>
+                <a href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
