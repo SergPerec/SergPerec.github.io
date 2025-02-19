@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Продукция</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="overlay" id="overlay"></div>
+        <div class="container">
+            <div class="header_inner desc">
+                <div class="header_item">
+                    <div class="header_burger" id="menuToggle">
+                        Меню
+                        <div class="burger_box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+                    <a href="index.html" class="header_logo">
+                        <img src="assets/images/logo.svg" alt="">
+
+                    </a>
+                </div>
+                <div class="header_item">
+                    <div class="header_item_contacts">
+                        <div class="header_item_contactsMail">
+
+                            <div>
+                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.4973 2.92554L12.6455 8.34784C11.8815 8.95091 10.8465 9.28958 9.76738 9.28958C8.68829 9.28958 7.65325 8.95091 6.88926 8.34784L0.0374416 2.92554C0.0260463 3.02731 0 3.11942 0 3.22055V10.9501C0.00129243 11.804 0.430483 12.6226 1.19343 13.2263C1.95637 13.8301 2.99078 14.1698 4.06974 14.1708H15.465C16.544 14.1698 17.5784 13.8301 18.3413 13.2263C19.1043 12.6226 19.5335 11.804 19.5348 10.9501V3.22055C19.5348 3.11942 19.5087 3.02731 19.4973 2.92554Z"
+                                        fill="#022113" />
+                                    <path
+                                        d="M11.4945 7.43714L18.9291 1.553C18.5689 1.08041 18.061 0.689245 17.4542 0.417224C16.8474 0.145202 16.1623 0.0015077 15.4649 0H4.06963C3.37226 0.0015077 2.68714 0.145202 2.08036 0.417224C1.47359 0.689245 0.965623 1.08041 0.605469 1.553L8.04007 7.43714C8.49879 7.7987 9.11984 8.00171 9.76727 8.00171C10.4147 8.00171 11.0358 7.7987 11.4945 7.43714Z"
+                                        fill="#022113" />
+                                </svg>
+                            </div>
+                            <a href="mailto:info@sellhim.pro">info@sellhim.pro</a>
+                        </div>
+                        <div class="header_item_contactsAdress">
+
+                            <div>
+                                <svg width="22" height="22" viewBox="0 0 14 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.9987 0.1875C10.7128 0.1875 13.7279 3.20256 13.7279 6.91667C13.7279 8.85071 12.7628 10.8414 11.5512 12.513C9.85939 14.8476 7.74366 16.5497 7.74366 16.5497V16.5501C7.5325 16.7199 7.26967 16.8125 6.9987 16.8125C6.72773 16.8125 6.46489 16.7199 6.25374 16.5501V16.5497C6.25374 16.5497 4.13801 14.8476 2.44622 12.513C1.23457 10.8414 0.269531 8.85071 0.269531 6.91667C0.269531 3.20256 3.28459 0.1875 6.9987 0.1875ZM6.9987 4.14583C8.5278 4.14583 9.76953 5.38756 9.76953 6.91667C9.76953 8.44577 8.5278 9.6875 6.9987 9.6875C5.46959 9.6875 4.22786 8.44577 4.22786 6.91667C4.22786 5.38756 5.46959 4.14583 6.9987 4.14583Z"
+                                        fill="#022113" />
+                                </svg>
+                            </div>
+
+                            <a href="https://yandex.ru/maps/?text=г.Саратов, ул.Осенняя, д. 6" target="_blank"
+                                rel="noopener noreferrer">
+                                г.Саратов, ул.Осенняя, д. 6
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_item_tell">
+                        <div class="header_item_tellNum">
+
+                            <div>
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_306_354)">
+                                        <path
+                                            d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                            fill="#022113" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_306_354">
+                                            <rect width="16" height="15.5387" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <a href="tel:+78452352522" itemprop="telephone">+7 (845) 235-25-22</a>
+                        </div>
+                        <div class="header_item_tellNum">
+
+                            <div>
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_306_354)">
+                                        <path
+                                            d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                            fill="#022113" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_306_354">
+                                            <rect width="16" height="15.5387" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <a href="tel:+78452352523" itemprop="telephone">+7 (845) 235-25-23</a>
+                        </div>
+                    </div>
+                    <button class="header_btn feedbackOpen" id="feedbackOpen">Заказать звонок</button>
+                </div>
+                <div class="header_menu" id="menu">
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="partners.html">Наши партнеры</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="products.html">Продукция</a></li>
+                        <!-- <li><a href="catalog.html">Сельхоз химия</a></li> -->
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_inner mobile">
+                <div class="burger_mob">
+
+                    <div class="burger_mob_icon">
+                        <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="51" height="51" rx="25.5" fill="#022113" />
+                            <rect x="11" y="21" width="29" height="2" rx="1" fill="white" />
+                            <rect x="11" y="28" width="21" height="2" rx="1" fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="burger_mob_box">
+                    <div class="burger_mob_top">
+                        <a href="index.html" class="burger_mob_logo">
+
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="burger_mob_close">
+
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="49" height="49" rx="24.5" stroke="#022113" stroke-width="2" />
+                                <rect x="16.4141" y="15" width="29" height="2" rx="1" transform="rotate(45 16.4141 15)"
+                                    fill="#022113" />
+                                <rect x="15" y="35.5061" width="29" height="2" rx="1" transform="rotate(-45 15 35.5061)"
+                                    fill="#022113" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="burger_mob_content">
+                        <ul>
+                            <li>
+                                <a href="about.html">О компании</a>
+                            </li>
+                            <li>
+                                <a href="partners.html">Наши партнеры</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="products.html">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger_mob_item">
+                        <div class="burger_mob_contacts">
+                            <div class="burger_mob_contactsMail">
+                                <div>
+                                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.4973 2.92554L12.6455 8.34784C11.8815 8.95091 10.8465 9.28958 9.76738 9.28958C8.68829 9.28958 7.65325 8.95091 6.88926 8.34784L0.0374416 2.92554C0.0260463 3.02731 0 3.11942 0 3.22055V10.9501C0.00129243 11.804 0.430483 12.6226 1.19343 13.2263C1.95637 13.8301 2.99078 14.1698 4.06974 14.1708H15.465C16.544 14.1698 17.5784 13.8301 18.3413 13.2263C19.1043 12.6226 19.5335 11.804 19.5348 10.9501V3.22055C19.5348 3.11942 19.5087 3.02731 19.4973 2.92554Z"
+                                            fill="#022113" />
+                                        <path
+                                            d="M11.4945 7.43714L18.9291 1.553C18.5689 1.08041 18.061 0.689245 17.4542 0.417224C16.8474 0.145202 16.1623 0.0015077 15.4649 0H4.06963C3.37226 0.0015077 2.68714 0.145202 2.08036 0.417224C1.47359 0.689245 0.965623 1.08041 0.605469 1.553L8.04007 7.43714C8.49879 7.7987 9.11984 8.00171 9.76727 8.00171C10.4147 8.00171 11.0358 7.7987 11.4945 7.43714Z"
+                                            fill="#022113" />
+                                    </svg>
+                                </div>
+                                <a href="mailto:info@sellhim.pro">info@sellhim.pro</a>
+                            </div>
+                            <div class="burger_mob_contactsAdress">
+                                <div>
+                                    <svg width="22" height="22" viewBox="0 0 14 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.9987 0.1875C10.7128 0.1875 13.7279 3.20256 13.7279 6.91667C13.7279 8.85071 12.7628 10.8414 11.5512 12.513C9.85939 14.8476 7.74366 16.5497 7.74366 16.5497V16.5501C7.5325 16.7199 7.26967 16.8125 6.9987 16.8125C6.72773 16.8125 6.46489 16.7199 6.25374 16.5501V16.5497C6.25374 16.5497 4.13801 14.8476 2.44622 12.513C1.23457 10.8414 0.269531 8.85071 0.269531 6.91667C0.269531 3.20256 3.28459 0.1875 6.9987 0.1875ZM6.9987 4.14583C8.5278 4.14583 9.76953 5.38756 9.76953 6.91667C9.76953 8.44577 8.5278 9.6875 6.9987 9.6875C5.46959 9.6875 4.22786 8.44577 4.22786 6.91667C4.22786 5.38756 5.46959 4.14583 6.9987 4.14583Z"
+                                            fill="#022113" />
+                                    </svg>
+                                </div>
+                                <!-- <p>г.Саратов, ул.Осенняя, д. 6</p> -->
+                                <a href="https://yandex.ru/maps/?text=г.Саратов, ул.Осенняя, д. 6" target="_blank"
+                                    rel="noopener noreferrer">
+                                    г.Саратов, ул.Осенняя, д. 6
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger_mob_tell">
+                            <div class="burger_mob_tellNum">
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_306_354)">
+                                            <path
+                                                d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                                fill="#022113" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_306_354">
+                                                <rect width="16" height="15.5387" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <a href="tel:+78452352522" itemprop="telephone">+7 (845) 235-25-22</a>
+                            </div>
+                            <div class="burger_mob_tellNum">
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_306_354)">
+                                            <path
+                                                d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                                fill="#022113" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_306_354">
+                                                <rect width="16" height="15.5387" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <a href="tel:+78452352523" itemprop="telephone">+7 (845) 235-25-23</a>
+                            </div>
+                        </div>
+                        <button class="burger_mob_btn feedbackOpen" id="feedbackOpen">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog_inner_main">
+                    <a href="index.html" class="mobile_logo_catalog">
+                        <img src="assets/images/main/header_top_logo.png" alt="">
+                    </a>
+                    <h1 class="catalog_title title">
+                        Сельхоз химия
+                    </h1>
+
+                    <div class="tabs catalog_menu">
+                        <div class="choose-buttons tabs__nav catalog_menu_tabsNav">
+                            <a href="#content-1"
+                                class="example-btn tabs__link tabs__link_active catalog_menu_tabsLink">ПРОТРАВИТЕЛИ
+                                СЕМЯН
+                                ИНСЕКТИЦИДНОГО ДЕЙСТВИЯ</a>
+                            <a href="#content-2" class="example-btn tabs__link catalog_menu_tabsLink">ГЕРБИЦИДЫ
+                                СЕЛЕКТИВНОГО
+                                ДЕЙСТВИЯ</a>
+                            <a href="#content-3" class="example-btn tabs__link catalog_menu_tabsLink">ПРОТРАВИТЕЛИ СЕМЯН
+                                ФУНГИЦИДНОГО ДЕЙСТВИЯ</a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ПРОТРАВИТЕЛИ СЕМЯН
+                                ДВОЙНОГО ДЕЙСТВИЯ </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">РЕГУЛЯТОРЫ
+                                РОСТА</a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ФУНГИЦИДЫ</a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ФУМИГАНТЫ </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ГЕРБИЦИДЫ
+                                ПОЧВЕННОГО
+                                ДЕЙСТВИЯ</a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ИНСЕКТИЦИДЫ </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ДЕСИКАНТЫ </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">ГЕРБИЦИДЫ
+                                СПЛОШНОГО
+                                ДЕЙСТВИЯ </a>
+                            <a href="#content-1"
+                                class="example-btn tabs__link catalog_menu_tabsLink">ПОВЕРХНОСТНО-АКТИВНЫЕ
+                                ВЕЩЕСТВА (ПАВ) </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">УДОБРЕНИЯ И
+                                СТИМУЛЯТОРЫ РОСТА </a>
+                            <a href="#content-1" class="example-btn tabs__link catalog_menu_tabsLink">РОДЕНТИЦИДЫ </a>
+
+                        </div>
+                        <div class="tabs__content catalog_menu_tabsContant">
+                            <div class="example-gallery tabs__pane tabs__pane_show catalog_menu_tabsContantShow"
+                                id="content-1">
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-gallery tabs__pane catalog_menu_tabsContantShow" id="content-2">
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="catalog_menu_tabsContant_item">
+                                    <div class="catalog_menu_tabsContant_item_content">
+                                        <p class="catalog_menu_tabsContant_item_name">Наименование</p>
+                                        <p class="catalog_menu_tabsContant_item_title">Акиба, ВСК , 500 г/л</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Изготовитель</p>
+                                        <p class="catalog_menu_tabsContant_item_text">Агро Эксперт Груп</p>
+                                        <p class="catalog_menu_tabsContant_item_name">Культура, обрабатываемый объект
+                                        </p>
+                                        <p class="catalog_menu_tabsContant_item_text">Зерновые, рапс, подсолнечник,
+                                            картофель, рапс</p>
+                                        <div class="catalog_menu_tabsContant_item_box">
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Фасовка</p>
+                                                <span class="catalog_menu_tabsContant_item_span">5</span>
+                                            </div>
+                                            <div>
+                                                <p class="catalog_menu_tabsContant_item_name">Норма расхода</p>
+                                                <span class="catalog_menu_tabsContant_item_span">0,08-8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog_menu_tabsContant_item_img">
+
+                                        <img src="assets/images/catalog/catalog_item.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback_inner">
+                    <img src="assets/images/main/feedback_inner.jpg" alt="">
+                    <form action="#" class="feedback_form">
+                        <h3 class="feedback_title">Обратная связь</h3>
+                        <label for="name" class="feedback_label">
+                            <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                        </label>
+                        <label for="phone" class="feedback_label">
+                            <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                        </label>
+                        <label for="email" class="feedback_label">
+                            <input type="email" id="email" name="email" placeholder="Введите почту" required>
+                        </label>
+                        <label for="message" class="feedback_label">
+                            <textarea id="message" name="message" placeholder="Введите сообщение" rows="3"></textarea>
+                        </label>
+                        <div class="feedback_agreement">
+                            <input type="checkbox" id="terms" name="terms" checked>
+                            <label for="terms">
+                                Я согласен(на) с <a href="#">условиями передачи информации</a>
+                            </label>
+    
+                            <input type="checkbox" id="policy" name="policy" checked>
+                            <label for="policy">
+                                С политикой в отношении обработки и защиты персональных данных <a
+                                    href="#">ознакомлен(на)</a>
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="feedback_submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_item">
+                        <a href="index.html" class="footer_logo">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="footer_item_box">
+                            <a href="about.html">О компании</a>
+                            <a href="reviews.html">Отзывы</a>
+                            <a href="contacts.html">Контакты</a>
+                            <a href="partners.html">Наши партнеры</a>
+                            <a href="products.html">Продукция</a>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item_contacts">
+                            <div class="header_item_contactsMail footer_contacts_mail">
+                                <div>
+                                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.4973 2.92554L12.6455 8.34784C11.8815 8.95091 10.8465 9.28958 9.76738 9.28958C8.68829 9.28958 7.65325 8.95091 6.88926 8.34784L0.0374416 2.92554C0.0260463 3.02731 0 3.11942 0 3.22055V10.9501C0.00129243 11.804 0.430483 12.6226 1.19343 13.2263C1.95637 13.8301 2.99078 14.1698 4.06974 14.1708H15.465C16.544 14.1698 17.5784 13.8301 18.3413 13.2263C19.1043 12.6226 19.5335 11.804 19.5348 10.9501V3.22055C19.5348 3.11942 19.5087 3.02731 19.4973 2.92554Z"
+                                            fill="#022113" />
+                                        <path
+                                            d="M11.4945 7.43714L18.9291 1.553C18.5689 1.08041 18.061 0.689245 17.4542 0.417224C16.8474 0.145202 16.1623 0.0015077 15.4649 0H4.06963C3.37226 0.0015077 2.68714 0.145202 2.08036 0.417224C1.47359 0.689245 0.965623 1.08041 0.605469 1.553L8.04007 7.43714C8.49879 7.7987 9.11984 8.00171 9.76727 8.00171C10.4147 8.00171 11.0358 7.7987 11.4945 7.43714Z"
+                                            fill="#022113" />
+                                    </svg>
+                                </div>
+                                <a href="mailto:info@sellhim.pro">info@sellhim.pro</a>
+                            </div>
+                            <div class="header_item_contactsAdress footer_contacts_adress">
+                                <div>
+                                    <svg width="22" height="22" viewBox="0 0 14 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.9987 0.1875C10.7128 0.1875 13.7279 3.20256 13.7279 6.91667C13.7279 8.85071 12.7628 10.8414 11.5512 12.513C9.85939 14.8476 7.74366 16.5497 7.74366 16.5497V16.5501C7.5325 16.7199 7.26967 16.8125 6.9987 16.8125C6.72773 16.8125 6.46489 16.7199 6.25374 16.5501V16.5497C6.25374 16.5497 4.13801 14.8476 2.44622 12.513C1.23457 10.8414 0.269531 8.85071 0.269531 6.91667C0.269531 3.20256 3.28459 0.1875 6.9987 0.1875ZM6.9987 4.14583C8.5278 4.14583 9.76953 5.38756 9.76953 6.91667C9.76953 8.44577 8.5278 9.6875 6.9987 9.6875C5.46959 9.6875 4.22786 8.44577 4.22786 6.91667C4.22786 5.38756 5.46959 4.14583 6.9987 4.14583Z"
+                                            fill="#022113" />
+                                    </svg>
+                                </div>
+                                <a href="https://yandex.ru/maps/?text=г.Саратов, ул.Осенняя, д. 6" target="_blank"
+                                    rel="noopener noreferrer">
+                                    г.Саратов, ул.Осенняя, д. 6
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_item_tell footer_item_tell">
+                            <div class="header_item_tellNum">
+    
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_306_354)">
+                                            <path
+                                                d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                                fill="#022113" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_306_354">
+                                                <rect width="16" height="15.5387" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <a href="tel:+78452352522" itemprop="telephone">+7 (845) 235-25-22</a>
+                            </div>
+                            <div class="header_item_tellNum ">
+    
+                                <div>
+                                    <svg width="20" height="20" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_306_354)">
+                                            <path
+                                                d="M14.7654 14.3232L15.3721 13.6454C15.7582 13.2699 15.9751 12.7613 15.9751 12.2312C15.9751 11.701 15.7582 11.1925 15.3721 10.817C15.3514 10.797 13.7474 9.60089 13.7474 9.60089C13.3625 9.24568 12.8511 9.04791 12.3196 9.04864C11.7881 9.04934 11.2774 9.24852 10.8934 9.60476L9.62275 10.6425C8.58553 10.2264 7.64335 9.61585 6.85028 8.84582C6.05722 8.07579 5.42891 7.16149 5.00144 6.1554L6.0681 4.92766C6.43591 4.55558 6.64163 4.0604 6.6425 3.54508C6.64338 3.02975 6.43932 2.53395 6.07275 2.16069C6.07275 2.16069 4.83744 0.607904 4.81675 0.587874C4.43641 0.2168 3.92069 0.00567461 3.38103 0.000112726C2.84141 -0.00544913 2.32118 0.195 1.93276 0.55815L1.1661 1.20433C-3.36325 6.29759 6.3901 15.6783 11.8181 15.5096C12.3662 15.5127 12.9094 15.4093 13.4156 15.2055C13.9218 15.0017 14.3808 14.7017 14.7654 14.3232Z"
+                                                fill="#022113" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_306_354">
+                                                <rect width="16" height="15.5387" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <a href="tel:+78452352523" itemprop="telephone">+7 (845) 235-25-23</a>
+                            </div>
+                        </div>
+                        <button class="footer_btn feedbackOpen" id="feedbackOpen">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="feedback_main" id="feedback_main">
+            <div class="feedback_main_wrapper">
+                <span id="closeFeedback" class="closeFeedback">
+                    <img src="assets/images/formClose.svg" alt="">
+                </span>
+                <form class="feedback_form">
+                    <h3 class="feedback_title">Обратная связь</h3>
+                    <label for="name" class="feedback_label">
+                        <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                    </label>
+                    <label for="phone" class="feedback_label">
+                        <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                    </label>
+                    <label for="email" class="feedback_label">
+                        <input type="email" id="email" name="email" placeholder="Введите почту" required>
+                    </label>
+                    <label for="message" class="feedback_label">
+                        <textarea id="message" name="message" placeholder="Введите сообщение" rows="3"></textarea>
+                    </label>
+                    <div class="feedback_agreement">
+                        <input type="checkbox" id="info" name="info" checked>
+                        <label for="info">
+                            Я согласен(на) с <a href="#">условиями передачи информации</a>
+                        </label>
+        
+                        <input type="checkbox" id="polic" name="polic" checked>
+                        <label for="polic">
+                            С политикой в отношении обработки и защиты персональных данных <a
+                                href="#">ознакомлен(на)</a>
+                        </label>
+                    </div>
+        
+                    <button type="submit" class="feedback_submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
